@@ -1,0 +1,50 @@
+$font-stack: 'PT Sans',arial,helvetica,sans-serif
+$primary-color: #070707
+$border-color: #e6e8e9
+$background-color: #ffffff
+$width: 600px
+
+body
+	font: 100% $font-stack
+
+.mainnav
+	display: block
+	background: $background-color
+	box-shadow: 0 3px 2px -3px $primary-color
+	ul
+		margin: 0
+		padding: 15px 0
+	li
+		padding: 0 5px
+		display: inline-block
+		position: relative
+		border-left: 1px solid $border-color
+		ul
+			display: none
+			position: absolute
+			background: $background-color
+			li
+				border: none
+			a
+				padding: 5px 10px
+				text-transform: lowercase
+				color: $primary-color * 16
+				background: none
+	li:first-child
+		border: none
+
+	a
+		display: block
+		color: $primary-color
+		text-decoration: none
+		text-transform: uppercase
+		padding: 5px 20px 5px 10px
+		background: url(../images/design/menu-arrow.png) center right no-repeat
+	a:hover
+		color: $primary-color * 22
+@media screen and (max-width : $width)
+	.mainnav li
+		display: block
+		border: none
+	.mainnav li ul 
+		position: static

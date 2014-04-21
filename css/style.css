@@ -1,0 +1,26 @@
+/* line 7, style.sass */
+body { font: 100% "PT Sans", arial, helvetica, sans-serif; }
+
+/* line 10, style.sass */
+.mainnav { display: block; background: white; box-shadow: 0 3px 2px -3px #070707; }
+/* line 14, style.sass */
+.mainnav ul { margin: 0; padding: 15px 0; }
+/* line 17, style.sass */
+.mainnav li { padding: 0 5px; display: inline-block; position: relative; border-left: 1px solid #e6e8e9; }
+/* line 22, style.sass */
+.mainnav li ul { display: none; position: absolute; background: white; }
+/* line 26, style.sass */
+.mainnav li ul li { border: none; }
+/* line 28, style.sass */
+.mainnav li ul a { padding: 5px 10px; text-transform: lowercase; color: #707070; background: none; }
+/* line 33, style.sass */
+.mainnav li:first-child { border: none; }
+/* line 36, style.sass */
+.mainnav a { display: block; color: #070707; text-decoration: none; text-transform: uppercase; padding: 5px 20px 5px 10px; background: url(../images/design/menu-arrow.png) center right no-repeat; }
+/* line 43, style.sass */
+.mainnav a:hover { color: #9a9a9a; }
+
+@media screen and (max-width: 600px) { /* line 46, style.sass */
+  .mainnav li { display: block; border: none; }
+  /* line 49, style.sass */
+  .mainnav li ul { position: static; } }
